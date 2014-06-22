@@ -1,0 +1,152 @@
+=== Subhunt game ===
+
+An even more stripped-down version of the AirSea battle game, where all you do is hunt for submarines. I had some cool ideas while browsing through the Moffett field museum. Specifically they had a booth set up where you could listen to tantalizing sonar sounds through headphones-- things like whales, nuke-sub engines, and torpedoes in the water. These sounds would make for an amazing ambient soundtrack!
+
+All the submarine games I can find on the internet are stupid side-scrollers so I think this idea is safe.
+
+Jots--
+* Can add current, maybe wind later. A rule of thumb I found: "30 knots of wind is worth 1 knot of current."
+** And of course, we have our units for speed now-- "knots". Just have to translate that into pixels.
+* *Sigh*. Can't focus on working on this game.
+** I discovered a cheat in my game: if you switch to a different tab, the destroyer stops moving, and effects of turn "decelleration" die out.
+* Notes on manueverability: "The destroyers have dual rudders and excellent acceleration and deceleration. They will accelerate from all stop to ahead flank in less than 90 seconds. Using a back-full bell, they can stop from ahead full to dead in the water, in about a minute while covering less than 600 yards. " [http://www.usni.org/magazines/proceedings/1994-10/professional-notes]
+** Turn radius is estimated as about 1200 yards at 30 knots, and 500 yards at 10 knots.
+** The ship is steered with 2 rudders and 2 propellers in the back; there is no "bow rudder"
+** Interestingly, cruise ships often have engines in pods which can turn sideways, allowing them to turn almost in place. Another youtube video.
+*** Useful discussion of rudder physics approximations: http://forum.unity3d.com/threads/20892-Boat-Racing-Game-Physics
+* The goal of the sub-hunting game is to defeat one (or more?) adversary subs
+* I haven't decided if there is a visual indicator of the sub or not-- i.e. if you have to find it through sonar pings alone. Have to look into how sonar works.
+* Rather than have a fixed screen the boat moves on, it may be better to fix the boat and move the world around it. This solves the problem of keeping the boat within bounds on the screen. A timer can force the player to hunt down subs and destroy them.
+
+Ship dimensions
+* Uboat Type 7C
+** Displacement: 800 tons
+** LWH: 67 x 6 x 10 m
+** Draft: 5m
+** Max depth: 250m
+** Speed: 18 knots surfaced, 8 knots submerged (~9.5 m/s surfaced, 4.5 m/s submerged)
+* Destroyer (Fletcher class)
+** Displacement: 2000 - 2500 tons
+** LWH: 115 x 12 x ? m
+** Draft: 4m
+** Speed: 37 knots (19 m/s)
+* Uboat torpedo
+** Range & speed: 5000m / 30 knots (~15 m/s)
+** Homing torpedo: 24 knots
+** 7m long, 0.5m wide
+
+Elements of antisubmarine warfare:
+* Day v. night: another element that could be interesting. Esp. the position of the moon provides a backlight that can reveal a surfaced U-boat
+* Radar can detect surfaced subs as well
+** Show a rotating line on the screen with target-dots, like the movies!
+** False positives could be: rocks?, fishing ships
+* Aircraft.. neglected for now
+* Sonobuoys: sonar pods ejected from ships or aircraft
+** A problem: they can be "overwhelemed by the noise of the ocean" [https://en.wikipedia.org/wiki/Sonobuoy]
+*** So noise is a big element of this game: noise from aquatic life, the throbbing of the ocean, blots out (or even sounds like?) a submarine
+**** We could have whales/dolphins/other creatures moving through certain areas. Or sunken hulls that give false positives!
+* Sonar: how it works
+** Active sonar sends out a ping (which could be detected by the sub as well?) to discover objects, presumably at greater distances
+*** Problem is that echo that comes back gets weaker as object is farther away
+**** KEY at a certain distance sub can hear a ping before it gets back to the surface ship; active sonar can give away location of a ship before it detects the sub
+** Passive sonar just listens to the environment
+*** Preferred in modern systems: digital signal processing can help to reduce noise, classify signals
+*** Analysis of frequency spectrum: if an engine is known to make a sound at a certain frequency Hz, it can be identified
+** Some equations on performance
+*** https://en.wikipedia.org/wiki/Sonar#Performance_prediction_2
+** Physics
+*** Speed of sound varies with water temperature, pressure, salinity
+**** Empirically derived equation for speed: https://en.wikipedia.org/wiki/Sonar
+*** Btw 30 - 100m below surface there is a thermocline layer with rapid changes in temperature-- sound waves basically get refracted through this layer, contributing some uncertainty
+*** Sound can be reflected off ocean surface or floor, the submarine, rocks, wakes, wales, schools of fishes
+*** Scattering: sonar pings can bounce around, creating noise/interference; to minimize scattering active sonar is often directed in a beam
+** Bearing is found by mounting multiple receivers on a ship at different locations
+** Doppler effect-- frequency of a sound in water changes if object is moving towards us or away from us
+* Sound emission
+** KEY: amount of sound varies depending on speed of boat (and for a sub, also depth)
+** Subs can hide below thermal layers
+* Weapons/attack patterns
+** Depth charges
+*** Say 5m kill radius, 10m disablement radius-- have to get very close to the sub
+*** Damage decreases roughly with distance cubed
+*** The explosions basically bend the sub back and forth like a ruler, up to 16 times per depth charge
+*** It helps to land charges on both sides of the boat
+*** Downsides of use
+**** In WWII-era: "The effectiveness of early ASDIC was hamstrung by the use of the depth charge as an anti-submarine weapon. This required an attacking vessel to pass over a submerged contact before dropping charges over the stern, resulting in a loss of ASDIC contact in the moments leading up to attack. The hunter was effectively firing blind, during which time a submarine commander could take evasive action."
+**** A KEY PROBLEM and a great gameplay mechanic: after a depth charge is fired it can become difficult to detect a sub because the water has been disturbed-- it can take 15 minutes for it to settle down again. [https://en.wikipedia.org/wiki/Hedgehog_(weapon)]. This gives the sub a chance to escape.
+**** Depth has to be preset (may ignore this)
+***** Destroyers got around this problem by dumping a load of charges set to explode at different depths
+**** When ship is directly over the sub, early sonar systems would no longer detect it-- submarine commanders would turn their subs at this moment to evade attack
+*** Pros
+**** Causes cumulative damage based on 1/distance^2 from sub
+** Ahead-firing weapons
+*** Hedgehog: anti-sub mortars fired in a circular arc up to 500m in front of the ship
+**** Advantages over a depth charge
+***** Ranged attack, of course
+***** Only explodes on contact with a sub
+***** Doesn't need depth preset
+***** 1 or 2 direct hits kills a sub
+**** Cons
+***** But, near-miss causes little/no damage
+***** Pitch and roll on the ship can affect where mortars land
+** Torpedos
+*** Sonar, magnetic, wake-following flavors
+*** Again, distinction btw active and passive sonar: active-sonar torpedoes can give away their presence at great distances, passive torpedoes can only be heard at shorter ranges
+*** Unguided torpedoes are often launched in a "fan" or spread to maximize the chances of hitting the target
+*** Homing torpedoes had acoustic sensors, forced the sub to stop: "Falke worked much like a normal straight-running torpedo for the first 400 m of its run, after which its acoustic sensors became active and searched for a target. The sensitive sound sensing equipment in Falke required the torpedo be as quiet as possible, hence it ran at only 20 kt (37 km/h); in addition, the firing U-boat was forced to stop its motors. Falke was intended to home on merchant targets, however, so its slow speed was not a great hindrance." [http://en.wikipedia.org/wiki/G7e_torpedo]
+*** The optimum firing distance is between 300 to 1,000 meters. Torpedoes require at least 300 meters of run before they arm, so its not possible to attack any closer than 300 meters. The optimum gyro angle of the torpedo is zero degrees. The wider the gyro angle, the higher the chance for error. [http://www.uboataces.com/tactics-surfaced.shtml]
+**** Torpedoes could fire up to 5000m, or even 7500m
+*** Fortunately for the game, it seems that U-boats fired torpedoes only at periscope depth or higher
+** Mines
+*** Can be dropped by a boat, use sonar or magnetism to attract themselves toward a target
+* Submarine tactics / countermeasures
+** As mentioned: against depth charges, use the trick where the sub turns rapidly as soon as the ship is overhead
+** Active countermeasures
+*** Subs can launch false targets that generate noise
+** Passive countermeasures
+*** Sound-absorbing hull
+** Subs tend to prefer passive sonar and only use active sonar to detect a known adversary
+* Lessons
+** Pitch/roll of ship, simulated currents and winds are important
+** ASW ships tend to be frigates, not destroyers, at least these days
+
+* Das Boot
+** In the movie, a destroyer spots the U-Boat's periscope and mounts a surprise attack (or so the Captain thinks)
+** Interesting idea: The captain tries to sink the destroyer by sitting in its path while it comes for them (to depth-charge), and tries to shoot torpedoes at the ship. But the destroyer changes direction at the last second, and the captain loses it in the rough weather
+*** IMPORTANT: the sub can hover at periscope death and look for the destroyer
+**** Q: At what distance can the sub see the ship?
+** Rough weather can also make a difference, apparently in the destroyer's favor
+** The sub does a "silent run" at one point: it shuts off almost all electric power and runs engines at 50 RPM. The crew whispers. They can hear the destroyer thrashing overhead.
+*** Doesn't work
+** The men on the boat have to stop their yelling so the destroyer can't hear them
+** At 150m depth I guess the destroyer's active sonar can't ping them
+* The sub takes tens of hits during the movie. Most of them shake the boat but seem to do little damage.
+** One boat took hundreds of hits and survive the war
+* This movie is appalling. The captain abandons the helpless crew of an oil tanker he sank.
+
+=== AirSea Battle ===
+
+Stripped-down version of the . Maybe an iPhone/iPad app but I think I'll try out PyGame for this. Possibly multiplayer game, multiple players team up to attack heavily-defended regions. Elements/ideas:
+* Orbiting satellites reveal enemy (or your) locations from time to time
+* Submarines
+** Sonar that reveals occasional positions
+* Mines
+** How do we detect these? Anyway to get rid of them?
+* Airplanes
+** Friendly and enemy?
+** Do enemy aircraft come in and strafe or have more sophisticated behavior?
+* Helicopters? Any use for a friendly helo?
+* Land-based Anti-ship ballistic missiles
+** Level design revolves around straits, defended positions on land, & so on
+* Clouds/Fog that can hide your ship (or enemies) from view
+* Paranoia-- radar can only see so far, enemies might see you first
+* How to bring in radar/sonar?
+** How do we detect subs anyway? Shipboard sonar? Or using aircraft?
+** What weapons for attacking subs-- missiles, depth charges? Torpedoes?
+* Enemy ships
+* Electronic warfare (jamming)
+** Possibly interesting mechanic: turn on jamming to defend, but can't target enemies at the same time
+
+=== Fleet Battle Game ===
+
+There's no reason these games can't be multiplayer. Different players using phones can each control one ship and engage in fleet battles (could even add a geolocation feature for this). Each player (or even phone?) can relay radar information to other players.

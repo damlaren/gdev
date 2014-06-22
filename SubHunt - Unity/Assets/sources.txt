@@ -1,0 +1,53 @@
+=== Turbosquid Models ===
+
+Tigerfish Torpedo - http://www.turbosquid.com/3d-models/3d-torpedo-tigerfish-model/210023
+Generic sub - http://www.turbosquid.com/3d-models/max-submarine/388951
+U-Boat Type VIIC - http://www.turbosquid.com/3d-models/u-boat-3d-model/244649
+Akula sub - http://www.turbosquid.com/3d-models/submarine-class-akula-3ds-free/645918
+Generic sub #2 - http://www.turbosquid.com/3d-models/free-submarine-3d-model/708103
+Generic torpedo - http://www.turbosquid.com/3d-models/free-torped-3d-model/213608
+Toy sub - http://www.turbosquid.com/3d-models/toy-submarine-obj-free/738552
+Missile - http://www.turbosquid.com/3d-models/free-missile-3d-model/595524
+Seablade - http://www.turbosquid.com/3d-models/max-sea-blade-ship-seablade/211219
+
+Patrol Boat - http://www.3dvia.com/content/6AF1CD6072445668
+(this'll have to do for now...)
+
+=== Images/Textures ===
+
+brown-smoke.jpg - http://ek-stockphotos.deviantart.com/art/Smoke-Texture-93189363
+white-smoke.jpg - http://imaginationsis.deviantart.com/art/Smoke-07-172945234
+
+=== Sounds ===
+
+#underwater life
+croaker.mp3 - http://www.dosits.org/files/dosits/croaker48.mp3
+snapshrimp.mp3 - http://www.dosits.org/files/dosits/snap2.mp3
+airgun.mp3 - http://www.dosits.org/audio/anthropogenicsounds/airgun/
+bluewhale-low.mp3 - http://www.dosits.org/files/dosits/blue1.mp3
+bluewhale-high.mp3 - http://www.dosits.org/files/dosits/blue2.mp3
+bowhead-whale.mp3 - http://www.dosits.org/files/dosits/bow2.mp3
+fin-whale.mp3 - http://www.dosits.org/files/dosits/fin7.mp3
+humpback-song.mp3 - http://www.dosits.org/files/dosits/hump1.mp3
+humpback-gulp.mp3 - http://www.dosits.org/files/dosits/hfeed.mp3
+humpback-wail.mp3 - http://www.dosits.org/files/dosits/humpe.mp3
+minke-star-wars.mp3 - http://www.dosits.org/files/dosits/MinkeStarWars.mp3
+minke-boing.mp3 - http://www.dosits.org/files/dosits/MinkeWhaBoin.mp3
+right-whale.mp3 - http://www.dosits.org/files/dosits/right.mp3
+beluga.mp3 - http://www.dosits.org/files/dosits/belugp1.mp3
+dolphin.mp3 - http://www.dosits.org/files/dosits/ninasw_dolphinwhistle.mp3
+orca.mp3 - http://www.dosits.org/files/dosits/orcac.mp3
+
+#ambient sounds
+underwater_ambient.mp3 - http://www.sounddogs.com/previews/104/mp3/396215_SOUNDDOGS__un.mp3
+rain.mp3 - http://www.dosits.org/audio/othernaturalsounds/rainfall/
+earthquake.mp3 - http://www.dosits.org/files/dosits/eq1.mp3
+
+#sonar pings
+Submarine Sonar Sound.flv - http://www.youtube.com/watch?v=Ky1c_pF5qoc
+
+#a sinking feeling
+sinking.mp3 - http://www.sounddogs.com/previews/2215/mp3/345222_SOUNDDOGS__sh.mp3
+
+#ship sounds
+engine.mp3 - http://www.sounddogs.com/previews/58/mp3/560533_SOUNDDOGS__mo.mp3

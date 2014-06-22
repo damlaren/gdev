@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 6c530f3e5dbd00c4eb5a7b248781a7be
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: cabecacomb
+    100002: corpotorpe
+    100004: heltorpcen
+    100006: lemetorpba
+    100008: lemetorpbb
+    100010: lemetorpbe
+    100012: lemetorpci
+    100014: pahel05
+    100016: pahel06
+    100018: pahel07
+    100020: pahel08
+    100022: pahel1
+    100024: pahel2
+    100026: pahel3
+    100028: pahel4
+    100030: //RootNode
+    400000: cabecacomb
+    400002: corpotorpe
+    400004: heltorpcen
+    400006: lemetorpba
+    400008: lemetorpbb
+    400010: lemetorpbe
+    400012: lemetorpci
+    400014: pahel05
+    400016: pahel06
+    400018: pahel07
+    400020: pahel08
+    400022: pahel1
+    400024: pahel2
+    400026: pahel3
+    400028: pahel4
+    400030: //RootNode
+    2300000: cabecacomb
+    2300002: corpotorpe
+    2300004: heltorpcen
+    2300006: lemetorpba
+    2300008: lemetorpbb
+    2300010: lemetorpbe
+    2300012: lemetorpci
+    2300014: pahel05
+    2300016: pahel06
+    2300018: pahel07
+    2300020: pahel08
+    2300022: pahel1
+    2300024: pahel2
+    2300026: pahel3
+    2300028: pahel4
+    3300000: cabecacomb
+    3300002: corpotorpe
+    3300004: heltorpcen
+    3300006: lemetorpba
+    3300008: lemetorpbb
+    3300010: lemetorpbe
+    3300012: lemetorpci
+    3300014: pahel05
+    3300016: pahel06
+    3300018: pahel07
+    3300020: pahel08
+    3300022: pahel1
+    3300024: pahel2
+    3300026: pahel3
+    3300028: pahel4
+    4300000: corpotorpe
+    4300002: pahel07
+    4300004: pahel06
+    4300006: pahel05
+    4300008: pahel3
+    4300010: pahel1
+    4300012: pahel4
+    4300014: pahel08
+    4300016: heltorpcen
+    4300018: lemetorpba
+    4300020: lemetorpbb
+    4300022: lemetorpbe
+    4300024: lemetorpci
+    4300026: pahel2
+    4300028: cabecacomb
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

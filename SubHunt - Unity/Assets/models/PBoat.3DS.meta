@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: aad06b1784198644da2847b659330e74
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: 75mm gun
+    100002: 75mm gun01
+    100004: anten____1
+    100006: basturret
+    100008: basturret0
+    100010: Box02____1
+    100012: Box03____1
+    100014: cabin
+    100016: Capsule01
+    100018: Circle01_1
+    100020: Circle02_1
+    100022: Cylinder04
+    100024: deepbomb
+    100026: deepbomb01
+    100028: default#11
+    100030: default#11.target
+    100032: door_l
+    100034: door_l01
+    100036: door_r
+    100038: door_r01
+    100040: fence2___1
+    100042: fence____1
+    100044: glass
+    100046: Hatch
+    100048: Hatch01
+    100050: Hatch02
+    100052: inlet
+    100054: ladder
+    100056: life raft
+    100058: Loft03
+    100060: Loft05
+    100062: navigatio1
+    100064: //RootNode
+    100066: propeller1
+    100068: propeller_
+    100070: Rectangle0
+    100072: Rectangle1
+    100074: Rectangle2
+    100076: Rectangle3
+    100078: Rectangle4
+    100080: Rectangle5
+    100082: ring-buoy1
+    100084: sea wall
+    100086: Torus01__1
+    100088: Torus02__1
+    100090: turret
+    100092: turret01
+    100094: vetilation
+    100096: winch
+    100098: winch01
+    100100: windshield
+    400000: 75mm gun
+    400002: 75mm gun01
+    400004: anten____1
+    400006: basturret
+    400008: basturret0
+    400010: Box02____1
+    400012: Box03____1
+    400014: cabin
+    400016: Capsule01
+    400018: Circle01_1
+    400020: Circle02_1
+    400022: Cylinder04
+    400024: deepbomb
+    400026: deepbomb01
+    400028: default#11
+    400030: default#11.target
+    400032: door_l
+    400034: door_l01
+    400036: door_r
+    400038: door_r01
+    400040: fence2___1
+    400042: fence____1
+    400044: glass
+    400046: Hatch
+    400048: Hatch01
+    400050: Hatch02
+    400052: inlet
+    400054: ladder
+    400056: life raft
+    400058: Loft03
+    400060: Loft05
+    400062: navigatio1
+    400064: //RootNode
+    400066: propeller1
+    400068: propeller_
+    400070: Rectangle0
+    400072: Rectangle1
+    400074: Rectangle2
+    400076: Rectangle3
+    400078: Rectangle4
+    400080: Rectangle5
+    400082: ring-buoy1
+    400084: sea wall
+    400086: Torus01__1
+    400088: Torus02__1
+    400090: turret
+    400092: turret01
+    400094: vetilation
+    400096: winch
+    400098: winch01
+    400100: windshield
+    2300000: 75mm gun
+    2300002: 75mm gun01
+    2300004: anten____1
+    2300006: basturret
+    2300008: basturret0
+    2300010: Box02____1
+    2300012: Box03____1
+    2300014: cabin
+    2300016: Capsule01
+    2300018: Circle01_1
+    2300020: Circle02_1
+    2300022: Cylinder04
+    2300024: deepbomb
+    2300026: deepbomb01
+    2300028: door_l
+    2300030: door_l01
+    2300032: door_r
+    2300034: door_r01
+    2300036: fence2___1
+    2300038: fence____1
+    2300040: glass
+    2300042: Hatch
+    2300044: Hatch01
+    2300046: Hatch02
+    2300048: inlet
+    2300050: ladder
+    2300052: life raft
+    2300054: Loft03
+    2300056: Loft05
+    2300058: navigatio1
+    2300060: propeller1
+    2300062: propeller_
+    2300064: Rectangle0
+    2300066: Rectangle1
+    2300068: Rectangle2
+    2300070: Rectangle3
+    2300072: Rectangle4
+    2300074: Rectangle5
+    2300076: ring-buoy1
+    2300078: sea wall
+    2300080: Torus01__1
+    2300082: Torus02__1
+    2300084: turret
+    2300086: turret01
+    2300088: vetilation
+    2300090: winch
+    2300092: winch01
+    2300094: windshield
+    3300000: 75mm gun
+    3300002: 75mm gun01
+    3300004: anten____1
+    3300006: basturret
+    3300008: basturret0
+    3300010: Box02____1
+    3300012: Box03____1
+    3300014: cabin
+    3300016: Capsule01
+    3300018: Circle01_1
+    3300020: Circle02_1
+    3300022: Cylinder04
+    3300024: deepbomb
+    3300026: deepbomb01
+    3300028: door_l
+    3300030: door_l01
+    3300032: door_r
+    3300034: door_r01
+    3300036: fence2___1
+    3300038: fence____1
+    3300040: glass
+    3300042: Hatch
+    3300044: Hatch01
+    3300046: Hatch02
+    3300048: inlet
+    3300050: ladder
+    3300052: life raft
+    3300054: Loft03
+    3300056: Loft05
+    3300058: navigatio1
+    3300060: propeller1
+    3300062: propeller_
+    3300064: Rectangle0
+    3300066: Rectangle1
+    3300068: Rectangle2
+    3300070: Rectangle3
+    3300072: Rectangle4
+    3300074: Rectangle5
+    3300076: ring-buoy1
+    3300078: sea wall
+    3300080: Torus01__1
+    3300082: Torus02__1
+    3300084: turret
+    3300086: turret01
+    3300088: vetilation
+    3300090: winch
+    3300092: winch01
+    3300094: windshield
+    4300000: 75mm gun
+    4300002: 75mm gun01
+    4300004: Box02____1
+    4300006: Box03____1
+    4300008: Capsule01
+    4300010: Circle01_1
+    4300012: Circle02_1
+    4300014: Cylinder04
+    4300016: Hatch
+    4300018: Hatch01
+    4300020: Hatch02
+    4300022: Loft03
+    4300024: Loft05
+    4300026: Rectangle0
+    4300028: Rectangle1
+    4300030: Rectangle2
+    4300032: Rectangle3
+    4300034: Rectangle4
+    4300036: Rectangle5
+    4300038: Torus01__1
+    4300040: Torus02__1
+    4300042: anten____1
+    4300044: basturret
+    4300046: basturret0
+    4300048: cabin
+    4300050: deepbomb
+    4300052: deepbomb01
+    4300054: door_l
+    4300056: door_l01
+    4300058: door_r
+    4300060: door_r01
+    4300062: fence____1
+    4300064: fence2___1
+    4300066: glass
+    4300068: inlet
+    4300070: ladder
+    4300072: life raft
+    4300074: navigatio1
+    4300076: propeller_
+    4300078: propeller1
+    4300080: ring-buoy1
+    4300082: sea wall
+    4300084: turret
+    4300086: turret01
+    4300088: vetilation
+    4300090: winch
+    4300092: winch01
+    4300094: windshield
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
